@@ -27,7 +27,7 @@ public class PostService {
 	private final Logger logger = LogManager.getLogger(PostService.class);
 
 
-	public ArrayList<Post> fetchPosts(int groupId, Long timeStamp, int numberOfPosts){
+	public ArrayList<Post> fetchPosts(long groupId, Long timeStamp, int numberOfPosts){
 		
 		ArrayList<Post> postsList = null;
 		

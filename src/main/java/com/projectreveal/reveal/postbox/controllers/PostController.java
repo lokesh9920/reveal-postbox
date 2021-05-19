@@ -32,7 +32,7 @@ public class PostController {
 	
 	@GetMapping
 	@CrossOrigin
-	public ResponseEntity<Object> getPosts(	@RequestParam("groupId") int groupId, 
+	public ResponseEntity<Object> getPosts(	@RequestParam("groupId") long groupId, 
 											@RequestParam("timeStamp") Long timeStamp,
 											@RequestParam("count") int numberOfPosts){
 		

@@ -23,7 +23,7 @@ public interface PostsMapper {
 		@Result(property = "dislikesCount",column = "dislikes_count"),
 		@Result(property = "timeStamp",column = "time_stamp")
 	})
-	public ArrayList<Post> fetchPosts(int groupId, Long timeStamp, int numberOfPosts);
+	public ArrayList<Post> fetchPosts(long groupId, Long timeStamp, int numberOfPosts);
 
 	
 	/*
@@ -31,7 +31,7 @@ public interface PostsMapper {
 	 */
 	@Options(useGeneratedKeys = true, keyProperty = "post.id", keyColumn = "ID")
 	@Insert("insert into Posts (post_content,time_stamp,created_by,group_id) values(#{postContent},#{timeStamp},#{postCreator},#{groupId})")
-	public void addNewPost(String postContent,int groupId, String postCreator, Long timeStamp,Post post);
+	public void addNewPost(String postContent,long groupId, String postCreator, Long timeStamp,Post post);
 
 	
 	@Select("select * from posts where id = #{id}")

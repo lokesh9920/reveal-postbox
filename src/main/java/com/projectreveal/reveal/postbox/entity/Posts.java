@@ -33,5 +33,5 @@ public class Posts {
 	String createdBy;
 	
 	@Column(name = "group_id")
-	int groupId;
+	long groupId;
 }

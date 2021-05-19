@@ -10,6 +10,6 @@ import lombok.Setter;
 public class NewPost {
 
 	private String postCreator;
-	private int groupId;
+	private long groupId;
 	private String postContent;
 }
