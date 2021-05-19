@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed May 19 21:54:48 IST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0179-8571-a510-000001b42358 
+on database directory memory:D:\frontend\reveal-postbox\8bef8fe3-1b28-44cf-9525-9abc5fe1962a with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4e0e2f2a 
+Loaded from file:/C:/Users/ltangell/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=12.0.1+12
+user.dir=D:\frontend\reveal-postbox
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

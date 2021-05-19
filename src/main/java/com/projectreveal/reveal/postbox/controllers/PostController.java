@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.projectreveal.reveal.postbox.constants.LoggingConstants;
 import com.projectreveal.reveal.postbox.models.NewPost;
 import com.projectreveal.reveal.postbox.models.Post;
+import com.projectreveal.reveal.postbox.models.PostsWrapper;
 import com.projectreveal.reveal.postbox.service.PostService;
 
 
@@ -41,10 +42,11 @@ public class PostController {
 		
 		logger.info(LoggingConstants.REQUEST_LOGGER, "GET", "/posts");
 		ArrayList<Post> postsList = postService.fetchPosts(groupId,timeStamp,numberOfPosts);
-		
+		PostsWrapper postWrapper = new PostsWrapper();
+		postWrapper.setPosts(postsList);
 		logger.info(LoggingConstants.RESPONSE_BODY, "GET","/posts",HttpStatus.OK,postsList);
 		
-		return new ResponseEntity<Object>(postsList, HttpStatus.OK);
+		return new ResponseEntity<Object>(postWrapper, HttpStatus.OK);
 		
 	}
 	
